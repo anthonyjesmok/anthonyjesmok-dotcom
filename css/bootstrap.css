@@ -12,6 +12,7 @@ html {
 }
 body {
   margin: 0;
+  padding-top: 55px;
 }
 article,
 aside,
@@ -3770,7 +3771,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -3880,9 +3881,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
-  font-size: 24px;
-  font-weight: bold;
+  padding: 12px 15px;
+  font-size: 28px;
+  font-weight: bolder;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4190,7 +4191,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse {
   background-color: #00527F;
-  border-color: #002940;
+  border-bottom: 3px #002940 solid;
 }
 .navbar-inverse .navbar-brand {
   color: #FFFFFF;
