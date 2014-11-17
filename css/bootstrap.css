@@ -1268,10 +1268,12 @@ pre code {
   padding-left: 15px;
 }
 .row:nth-child(odd) {
-  background-color: #3D99CC;
+  background-color: #0084CC;
+  color: #FFF;
 }
 .row:nth-child(even) {
-  background-color: #0084CC;
+  background-color: #3D99CC;
+  color: #FFF;
 }
 #connect {
   padding-top: 10px;
@@ -5354,6 +5356,10 @@ button.close {
   height: 50px;
   background-color: #00527F;
   border-top: 2px #002940 solid;
+}
+
+.padded {
+  padding: 5px;
 }
 
 /* # sourceMappingURL=bootstrap.css.map */
