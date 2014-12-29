@@ -16,8 +16,8 @@
           <div class="container">
             <div class="nav-wrapper"><a href="index.html" class="brand-logo">Anthony Jesmok</a>
               <ul id="nav-mobile" class="right side-nav">
-                <li class="active"><a href="index.html">Story</a></li>
-                <li><a href="work.html">Work</a></li>
+                <li><a href="index.html">Story</a></li>
+                <li class="active"><a href="work.html">Work</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="resume.pdf">Resume</a></li>
               </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -25,20 +25,26 @@
           </div>
         </nav>
       </header>
-      <!-- STORY -->
+      <!-- WORK -->
       <main>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m12">
-              <div class="card light-blue darken-4">
-              <div class="card-content white-text">
-                <span class="card-title">Hello There!</span>
-                <p>My name is Anthony. I'm a web and mobile developer, entrepreneur, student, nerd, leader and overall technophile. This is my story.</p>
+          <div class="tabs-wrapper">
+            <div class="row white z-depth-1">
+              <div class="container">
+                <ul class="tabs">
+                  <li class="tab"><a href="#web">Web</a></li>
+                  <li class="tab"><a href="#mobile">Mobile</a></li>
+                  <li class="tab"><a href="#presentations">Presentations</a></li>
+                  <li class="tab"><a href="#other">Other</a></li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+          <div class="container" id="mainContent">
+            <div id="web" class="col s12">Test 1</div>
+            <div id="mobile" class="col s12">Test 2</div>
+            <div id="presentations" class="col s12">Test 3</div>
+            <div id="other" class="col s12">Test 4</div>
+          </div>
       </main>
       <!-- FOOTER -->
       <footer class="light-blue darken-3" id="head">
@@ -68,8 +74,14 @@
           </div>
         </div>
       </footer>  
+        
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+            $('ul.tabs').tabs();
+          });
+    </script>
   </body>
  </html>

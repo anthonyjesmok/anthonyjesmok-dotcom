@@ -2072,7 +2072,7 @@ img.responsive-img {
 footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73; }
+  background-color: #0277bd; }
   footer .footer-copyright {
     line-height: 50px;
     color: rgba(255, 255, 255, 0.8);
@@ -4713,7 +4713,7 @@ img.circle {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #0277bd;
   width: 100%;
   height: 56px;
   line-height: 56px; }
@@ -5177,7 +5177,7 @@ ul.tabs {
       ul.tabs li.tab {
         max-width: 25%; } }
     ul.tabs li.tab a {
-      color: #ee6e73;
+      color: #0277bd;
       display: block;
       width: 100%;
       height: 100%;
@@ -5187,12 +5187,12 @@ ul.tabs {
       -ms-transition: color 0.28s ease;
       transition: color 0.28s ease; }
       ul.tabs li.tab a:hover {
-        color: #f8c1c3; }
+        color: #0288d1; }
   ul.tabs .indicator {
     position: absolute;
     bottom: 0;
     height: 2px;
-    background-color: #ee6e73; }
+    background-color: #0277bd; }
 
 ul.tabs li.tab {
   padding: 0; }
