@@ -1,0 +1,85 @@
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+      <title>Anthony Jesmok</title>
+      <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+      <!-- HEADER -->
+      <header>
+        <nav class="light-blue darken-3" id="head">
+          <div class="container">
+            <div class="nav-wrapper"><a href="index.html" class="brand-logo">Anthony Jesmok</a>
+              <ul id="nav-mobile" class="right side-nav">
+                <li><a href="index.html">Story</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li class="active"><a href="skills.html">Skills</a></li>
+                <li><a href="resume.pdf" target="new">Resume</a></li>
+              </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- WORK -->
+      <main>
+          <div class="tabs-wrapper">
+            <div class="row white z-depth-1">
+              <div class="container">
+                <ul class="tabs">
+                  <li class="tab"><a href="#tech">Technical</a></li>
+                  <li class="tab"><a href="#mobile">Non-Technical</a></li>
+                  <li class="tab"><a href="#courses">Courses</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="mainContent">
+            <div id="tech" class="col s12">Test 1</div>
+            <div id="mobile" class="col s12">Test 2</div>
+            <div id="courses" class="col s12">Courses</div>
+          </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="light-blue darken-3" id="head">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">A Tidbit About Me</h5>
+              <p id="tidbit" class="white-text">Tidbit Here</p>
+            </div>
+            <div class="col l4 offset-l1 s12">
+              <h5 class="white-text">Let's Connect!</h5>
+              <a href="mailto:me@anthonyjesmok.com"><img class="socialIcon" src="imgs/footer/close13.svg" /></a>
+              <a href="https://github.com/anthonyjesmok"><img class="socialIcon" src="imgs/footer/github7.svg" /></a>
+              <a href="https://www.linkedin.com/profile/view?id=81374290"><img class="socialIcon" src="imgs/footer/linkedin12.svg" /></a>
+              <a href="https://angel.co/anthony-jesmok"><img class="socialIcon" src="imgs/footer/peace2.svg" /></a>
+              <a href="https://plus.google.com/+AnthonyJesmok/"><img class="socialIcon" src="imgs/footer/social5.svg" /></a>
+              <a href="https://twitter.com/anthonyjesmok"><img class="socialIcon" src="imgs/footer/social19.svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2015 Anthony Jesmok
+          <a class="grey-text lighten-4 right" href="https://github.com/anthonyjesmok/anthonyjesmok-dotcom">View on GitHub</a>
+          </div>
+        </div>
+      </footer>  
+        
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('ul.tabs').tabs();
+      $(".button-collapse").sideNav();
+    });
+    </script>
+    <script type="text/javascript" src="js/factatron.js"></script>
+  </body>
+ </html>
