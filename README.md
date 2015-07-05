@@ -5,7 +5,8 @@ This is the code for my personal website, AnthonyJesmok.com
 Technologies Used
 -----------------
  - [Materialize.css](http://materializecss.com/ "Materialize.css")
- - [jQuery](http://www.jquery.org/ "jQuery.com")
+ - [jQuery](http://www.jquery.org/ "jQuery")
+ - [Bower](http://bower.io/ "Bower")
 
 Icons Made By
 -----------------

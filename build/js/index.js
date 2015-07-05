@@ -1,0 +1,1 @@
+$(document).ready(function(n){$.getJSON("http://www.codeivate.com/users/anthonyjesmok.json?callback=?",function(n){console.log(n.programming_now),n.programming_now&&($("#lang").text(n.current_language),$("#status").show())})});

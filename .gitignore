@@ -1,6 +1,5 @@
 sftp-config.json
 *.sublime-workspace
 *.sublime-project
-*.apk
-
-uwm_stops.json
+v1/
+node_modules/
