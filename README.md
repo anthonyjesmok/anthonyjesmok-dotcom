@@ -1,12 +1,14 @@
 AnthonyJesmok.com
 ===========================
-This is the code for my personal website, AnthonyJesmok.com
+This is the code for my personal website, AnthonyJesmok.com. It uses a Gulp-based build system and Bower for importing dependencies. Compiled files are located in the "build" directory.
 
 Technologies Used
 -----------------
  - [Materialize.css](http://materializecss.com/ "Materialize.css")
  - [jQuery](http://www.jquery.org/ "jQuery")
  - [Bower](http://bower.io/ "Bower")
+ - [Gulp](http://gulpjs.com/ "Gulp")
+ - Various Node Modules for Gulp
 
 Icons Made By
 -----------------
@@ -19,4 +21,4 @@ Icons Made By
 
 Production Site
 -----------------
-Since this is the code to my personal website, a live version is on the web. [Click here to access it.](http://www.anthonyjesmok.com/ "Anthony Jesmok")
+Since this is the code to my personal website, a live version is on the web. It is updated as major updates are pushed to this repository. [Click here to access it.](http://www.anthonyjesmok.com/ "Anthony Jesmok")

@@ -6,6 +6,7 @@ var facts =
 "I am a Google Glass Explorer and am using the Mirror API to create applications for Google Glass devices.",
 "I have worked on applications for many industries, including startups, non-profit organizations, higher education, and others.",
 "One quality of mine that has been noticed by numerous professionals: my attention to detail.",
-"While I am primarily a developer, I'm also getting my feet wet with hardware hacking projects and design."];
+"While I am primarily a developer, I'm also getting my feet wet with hardware hacking projects and design.",
+"I collect Wacky Packages cards and pieces of memorabilia from places I have visited."];
 
 $("#tidbit").text(facts[Math.floor(Math.random() * facts.length)]);
