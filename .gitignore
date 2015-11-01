@@ -3,3 +3,5 @@ sftp-config.json
 *.sublime-project
 v1/
 node_modules/
+*.tmp
+private_gulp_tasks/gulp_private_tasks.js

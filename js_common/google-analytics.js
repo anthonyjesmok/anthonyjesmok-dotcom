@@ -5,10 +5,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 //Send Page View
 ga('create', 'UA-60680005-1', 'auto');
-ga('send', 'pageview');
+ga('send', 'pageview', location.pathname);
 
 //jQuery Events
-
 //Desktop Nav Links
 $('#story_nav_link').click(function() {
   ga('send', 'event', 'nav-links', 'click', 'story', 1);

@@ -1,1 +1,1 @@
-$(document).ready(function(n){$.getJSON("http://www.codeivate.com/users/anthonyjesmok.json?callback=?",function(n){n.programming_now&&($("#lang").text(n.current_language),$("#status").show())})});
+$(document).ready(function(t){$("#status").hide(),$.getJSON("http://www.codeivate.com/users/anthonyjesmok.json?callback=?",function(t){t.programming_now&&($("#lang").text(t.current_language),$("#status").fadeIn())})});

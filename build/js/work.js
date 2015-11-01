@@ -1,0 +1,1 @@
+$(document).ready(function(t){$("ul.tabs").tabs(),Materialize.showStaggeredList("ul.tabs")});

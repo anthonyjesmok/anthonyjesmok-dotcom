@@ -10,6 +10,11 @@ var watch = require('gulp-watch');
 var batch = require('gulp-batch');
 var pngquant = require('imagemin-pngquant');
 var del = require("del");
+var requireDir = require('require-dir');
+
+//Import Private Gulp Tasks (Passwords and API Credentials, Can't Publish on GitHub)
+var private_gulp_tasks = requireDir('./private_gulp_tasks');
+
 //Tasks
 gulp.task('clean', function(cb) {
     del(['build/*'], cb);
@@ -59,5 +64,6 @@ gulp.task('watch', function () {
         gulp.start('move_standalone_js_files', done);
     }));
 });
+
 // Default Task
 gulp.task('default', ['clean', 'build_js_components', 'build_css_components', 'move_fonts', 'prettify_and_move_html', 'optimize_images', 'move_standalone_js_files', 'move_other_files']);
