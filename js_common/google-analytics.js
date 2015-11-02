@@ -35,3 +35,18 @@ $('#skills_nav_link_mobile').click(function() {
 $('#resume_nav_link_mobile').click(function() {
   ga('send', 'event', 'mobile-nav-links', 'click', 'resume', 1);
 });
+
+//Social Media Click Links
+$('.connectLink').click(function() {
+  ga('send', 'event', 'social-media-links', 'click', $(this).attr('href'), 1);
+});
+
+//Portfolio Click Links
+$('.portfolioLink').click(function() {
+  ga('send', 'event', 'portfolio-links', 'click', $(this).attr('href'), 1);
+});
+
+//Status Stats Click Link
+$('#statusStatsLink').click(function() {
+  ga('send', 'event', 'status-stats-link', 'click', $(this).attr('href'), 1);
+});
