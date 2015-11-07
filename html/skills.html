@@ -35,17 +35,25 @@
                 <div class="container">
                     <ul class="tabs light-blue-text text-darken-3">
                         <li class="tab s3"><a class="light-blue-text text-darken-3" href="#tech">Technical</a></li>
-                        <!--<li class="tab s3"><a class="light-blue-text text-darken-3" href="#nontech">Non-Technical</a></li>-->
+                        <li class="tab s3"><a class="light-blue-text text-darken-3" href="#nontech">Non-Technical</a></li>
                         <li class="tab s3"><a class="light-blue-text text-darken-3" href="#awards">Awards</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container" id="mainContent">
-            <div id="tech" class="col s12">
-                <h3>Technical Skills</h3>
-                <p>This is a chart of my technical skills with my level of confidence in each.</p>
-                <canvas id="techChart" height="100"></canvas>
+            <div id="tech">
+                <div class="row">
+                    <div class="col s12 m9 l9">
+                        <h3>Language Experience</h3>
+                        <p>The chart on this page shows my experience using various markup and programming languages. If you visit this page again later, it will likely change. This is because it retrieves real-time data from <a href="http://www.codeivate.com" target="_new">Codeivate</a>, a tool which tracks my coding time. This way, you are not seeing an estimate of my language experience, but rather actual recorded programming time.</p>
+                        <h3>Frameworks</h3>
+                        <p></p>
+                    </div>
+                    <div id="techChartDiv" class="col s12 m3 l3">
+                        <canvas id="techChart"></canvas>
+                    </div>
+                </div>
             </div>
             <div id="nontech" class="col s12">
                 <h3>Non-Technical Skills</h3>
@@ -91,45 +99,9 @@
                 </div>
             </div>
         </footer>
-        <!--  Scripts-->
+        <!-- Scripts and ChartJS -->
         <script src="components.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                var techChart = document.getElementById("techChart").getContext("2d");
-                var nonTechChart = document.getElementById("nonTechChart").getContext("2d");
-                var techData = {
-                    labels: ["HTML5/CSS3", "JavaScript", "jQuery", "Titanium Mobile", "PHP", "SQL", "Laravel MVC", "Python", "Java"],
-                    datasets: [
-                        {
-                            label: "Technical Skills",
-                            fillColor: "rgba(151,187,205,0.5)",
-                            strokeColor: "rgba(151,187,205,0.8)",
-                            highlightFill: "rgba(151,187,205,0.75)",
-                            highlightStroke: "rgba(151,187,205,1)",
-                            data: [95, 92, 90, 88, 80, 77, 75, 70, 60]
-                        }
-                    ]
-                };
-                var nonTechData = {
-                    labels: ["Public Speaking", "Agile Project Management", "Training", "Business Writing", "Systems Analysis", "User Experience", "Finance"],
-                    datasets: [
-                        {
-                            label: "Technical Skills",
-                            fillColor: "rgba(151,187,205,0.5)", 
-                            strokeColor: "rgba(151,187,205,0.8)",
-                            highlightFill: "rgba(151,187,205,0.75)",
-                            highlightStroke: "rgba(151,187,205,1)",
-                            data: [90, 90, 95, 93, 70, 60, 50]
-                        }
-                    ]
-                };
-                Chart.defaults.global.responsive = true;
-                var techChartRender = new Chart(techChart).Bar(techData);
-                var nonTechChartRender = new Chart(nonTechChart).Bar(nonTechData);
-                $('ul.tabs').tabs();
-                $(".button-collapse").sideNav();
-            });
-        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <script src="js/skills.js"></script>
     </body>
 </html>

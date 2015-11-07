@@ -8,6 +8,7 @@ Technologies Used
  - [jQuery](http://www.jquery.org/ "jQuery")
  - [Bower](http://bower.io/ "Bower")
  - [Gulp](http://gulpjs.com/ "Gulp")
+ - [ChartJS](http://www.chartjs.org/ "ChartJS")
  - Various Node Modules for Gulp
 
 Icons Made By
