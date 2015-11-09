@@ -7,6 +7,7 @@ var facts =
 "I have worked on applications for many industries, including startups, non-profit organizations, higher education, and others.",
 "One quality of mine that has been noticed by numerous professionals: my attention to detail.",
 "While I am primarily a developer, I'm also getting my feet wet with hardware hacking projects and design.",
-"I collect Wacky Packages cards and pieces of memorabilia from places I have visited."];
+"I collect Wacky Packages cards and pieces of memorabilia from places I have visited.",
+"I have an M3D Micro 3D printer, which I use to print objects like logo-branded business card holders and small household items."];
 
 $("#tidbit").text(facts[Math.floor(Math.random() * facts.length)]);

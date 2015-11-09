@@ -1,24 +1,10 @@
 $(document).ready(function(e) {
     $('ul.tabs').tabs();
     Materialize.showStaggeredList('ul.tabs');
-    //ChartJS Stuff
+    //ChartJS - Technical Skills Chart
     var techChart = document.getElementById("techChart").getContext("2d");
-    techChart.canvas.width = 230;
-	techChart.canvas.height = 230;
-    var nonTechChart = document.getElementById("nonTechChart").getContext("2d");
-    var nonTechData = {
-        labels: ["Public Speaking", "Agile Project Management", "Training", "Business Writing", "Systems Analysis", "User Experience", "Finance"],
-        datasets: [{
-            label: "Technical Skills",
-            fillColor: "rgba(151,187,205,0.5)",
-            strokeColor: "rgba(151,187,205,0.8)",
-            highlightFill: "rgba(151,187,205,0.75)",
-            highlightStroke: "rgba(151,187,205,1)",
-            data: [90, 90, 95, 93, 70, 60, 50]
-        }]
-    };
-    Chart.defaults.global.responsive = true;
-    var nonTechChartRender = new Chart(nonTechChart).Bar(nonTechData);
+    techChart.canvas.width = 300;
+	techChart.canvas.height = 300;
     //Codeivate Skills Chart
     var techData = [];
     //Track Total Points for Percentage Calculation
@@ -26,6 +12,7 @@ $(document).ready(function(e) {
     //Colors for Each Programming Language
     var languageColors = {'PHP' : '#8892bf', 'JavaScript': '#f0db4f', 'R': '#2e5bb0', 'Python': '#3776ac', 'HTML': '#e54d26', 'CSS': '#0070ba', 'XML': '#87961d', 'TSS': '#9d0e00', 'Markdown': '#4a525a', 'JSON': '#202020', 'YAML': '#f32401', 'Java': '#e11e21'};
     $.getJSON("http://www.codeivate.com/users/anthonyjesmok.json?callback=?", function(data) {
+    	//Loop through the languages
         for (var language in data.languages) {
             if (data.languages.hasOwnProperty(language)) {
             	//language = Name of the language

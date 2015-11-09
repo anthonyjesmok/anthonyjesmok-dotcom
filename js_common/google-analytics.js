@@ -20,6 +20,7 @@ $('#skills_nav_link').click(function() {
 });
 $('#resume_nav_link').click(function() {
   ga('send', 'event', 'nav-links', 'click', 'resume', 1);
+  ga('send', 'pageview', '/resume.pdf');
 });
 
 //Mobile Nav Links
@@ -34,6 +35,7 @@ $('#skills_nav_link_mobile').click(function() {
 });
 $('#resume_nav_link_mobile').click(function() {
   ga('send', 'event', 'mobile-nav-links', 'click', 'resume', 1);
+  ga('send', 'pageview', '/resume.pdf');
 });
 
 //Social Media Click Links
